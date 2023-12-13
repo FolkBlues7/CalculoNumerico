@@ -27,6 +27,7 @@ def f(x):
 def iterar(extremoA, extremoB, precisao, iteracoes):
     pMedio = 0
     for contador in range(iteracoes+1):
+        print("Iteração: " + str(contador))
         if extremoB - extremoA < precisao:
             print("Precisão alcançada, retornando ponto médio do intervalo: " + str((extremoB+extremoA)/2))
             return (extremoB+extremoA)/2
