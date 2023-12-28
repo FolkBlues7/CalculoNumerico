@@ -42,14 +42,3 @@ def iterar(extremoA, extremoB, precisao, iteracoes):
 A, B, E = iniciarValores()
 K = calcularNumIteracoes(A, B ,E)
 resultado = iterar(A, B , E, K)
-
-
-#                                                          ,d     
-#                                                          88     
-#8b,dPPYba,  ,adPPYYba, 8b,dPPYba, 8b,dPPYba,  ,adPPYba, MM88MMM  
-#88P'    "8a ""     `Y8 88P'   "Y8 88P'   "Y8 a8"     "8a  88     
-#88       d8 ,adPPPPP88 88         88         8b       d8  88     
-#88b,   ,a8" 88,    ,88 88         88         "8a,   ,a8"  88,    
-#88`YbbdP"'  `"8bbdP"Y8 88         88          `"YbbdP"'   "Y888  
-#88                                                               code made by: Vinicius
-#88                                                               ASCII art made by: unknow
