@@ -19,9 +19,6 @@ precisao2 = 0.0005
 def iterar(a,b):
     while True:
         x = calcularX(a, b)
-        print(x)
-        print(f(x))
-        print(b-a)
         if b-a < precisao1:
             return (a*b)/2
         if neverNegative(f(x)) < precisao1:
