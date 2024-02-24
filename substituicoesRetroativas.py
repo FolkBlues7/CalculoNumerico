@@ -6,16 +6,17 @@ A = [[5, -2, 6, 1],
 #um vetor
 b = [1, -2, 28, 8]
 
-#retorna o número de objetos em um container
-n = len(A)
-
 #cria uma lista de mesma dimensões de A com valores zero
-x = n * [0]
+def substituicaoRetroativa(A, b):
+   n = len(A)
+   x = n * [0]
+   for i in range(n-1, -1, -1):
+      S = 0 #sempre que for fazer um somatório, inicie a variável!
+      for j in range(i+1, n):
+         S = S + A[i][j] * x[j]
+      x[i] = (b[i] - S)/A[i][i]
+   print("Resultado: ")
+   print(x)
 
-for i in range(n-1, -1, -1):
-   S = 0 #sempre que for fazer um somatório, inicie a variável!
-   for j in range(i+1, n):
-      S = S + A[i][j] * x[j]
-   x[i] = (b[i] - S)/A[i][i]
+substituicaoRetroativa(A, b)
 
-print(x)
