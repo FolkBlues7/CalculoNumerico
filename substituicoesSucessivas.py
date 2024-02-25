@@ -15,8 +15,6 @@ def substituicoesSucessivas(A, b):
         for j in range(i):
             S += A[i][j] * x[j]
         x[i] = (b[i] - S) / A[i][i]
-    print("Resultado: ")
-    print(x)
 
 substituicoesSucessivas(A, b)
 

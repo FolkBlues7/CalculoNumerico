@@ -1,10 +1,9 @@
 #uma lista de listas, uma matríz
-A = [[5, -2, 6, 1],
-      [0, 3, 7, -4],
-      [0, 0, 4, 5],
-      [0, 0, 0, 2]]
+A = [[3, 1, 0],
+      [0, 3, 4],
+      [0, 0, 7/9]]
 #um vetor
-b = [1, -2, 28, 8]
+b = [4, 3, 0]     
 
 #cria uma lista de mesma dimensões de A com valores zero
 def substituicaoRetroativa(A, b):
@@ -15,8 +14,6 @@ def substituicaoRetroativa(A, b):
       for j in range(i+1, n):
          S = S + A[i][j] * x[j]
       x[i] = (b[i] - S)/A[i][i]
-   print("Resultado: ")
-   print(x)
 
 substituicaoRetroativa(A, b)
 

@@ -4,9 +4,9 @@ A = [[1, -3, 2],
      [4, -6, 5]]
 
 b = [11, -15, 29]
-n = len(A)
 
 def eliminacaoGauss(A, b):
+    n = len(A)
     for k in range (0, n-1):
         for i in range(k+1, n):
             m = - A[i][k]/A[k][k]
